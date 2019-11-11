@@ -32,7 +32,7 @@ namespace SampleJson
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
 			services.AddDbContext<NorthwindDbContext>(options =>
-		options.UseSqlServer(Configuration.GetConnectionString("northwind")));
+				options.UseSqlServer(Configuration.GetConnectionString("northwind")));
 
 			// Register the Swagger services
 			services.AddSwaggerDocument(config =>
